@@ -7,15 +7,17 @@ const FlashcardList = () => {
   const [flashcards, setFlashcards] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  const apiUrl = process.env.REACT_APP_BACKEND_URL;
+
   useEffect(() => {
-    axios.get('http://localhost:5000/api/flashcards')
+    axios.get(`${apiUrl}/api/flashcards`)
       .then((response) => {
         setFlashcards(response.data);
       })
       .catch((error) => {
         console.error('There was an error fetching the flashcards!', error);
       });
-  }, []);
+  }, [apiUrl]);
 
   const nextCard = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % flashcards.length);

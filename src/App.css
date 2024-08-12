@@ -6,6 +6,38 @@
   height: 40vmin;
   pointer-events: none;
 }
+/* Container for the navigation bar */
+nav {
+  background-color: #333;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Styling for navigation links */
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hover and active state for navigation links */
+nav a:hover, nav a.active {
+  background-color: #555;
+  color: #fff;
+}
+
+/* Additional styling for active links (optional) */
+nav a.active {
+  background-color: #007bff;
+  color: #fff;
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

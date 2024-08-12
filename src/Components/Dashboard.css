@@ -1,0 +1,98 @@
+.dashboard-container {
+    max-width: 800px; /* Set a maximum width for the dashboard */
+    margin: 40px auto; /* Center the dashboard with top margin */
+    padding: 20px;
+    background-color: #ffffff; /* Clean white background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Enhanced shadow for depth */
+}
+
+.dashboard-header {
+    text-align: center; /* Center the header text */
+    margin-bottom: 30px; /* Space below the header */
+}
+
+.dashboard-header h1 {
+    font-size: 2.5rem; /* Larger font size for the title */
+    color: #333; /* Darker color for contrast */
+}
+
+.dashboard-form {
+    display: flex;
+    flex-direction: column; /* Stack form elements vertically */
+    gap: 15px; /* Space between form elements */
+}
+
+.dashboard-form input {
+    padding: 12px; /* Increased padding for inputs */
+    border: 2px solid #007bff; /* Blue border for inputs */
+    border-radius: 5px; /* Rounded corners for inputs */
+    font-size: 16px; /* Font size for inputs */
+    transition: border-color 0.3s ease; /* Transition effect for border color */
+}
+
+.dashboard-form input:focus {
+    border-color: #0056b3; /* Darker border on focus */
+    outline: none; /* Remove default outline */
+}
+
+.dashboard-form button {
+    padding: 12px; /* Increased padding for buttons */
+    background-color: #007bff; /* Primary button color */
+    color: #ffffff; /* White text for contrast */
+    border: none;
+    border-radius: 5px; /* Rounded corners for buttons */
+    cursor: pointer;
+    font-size: 16px; /* Font size for buttons */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transition effects */
+}
+
+.dashboard-form button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+.flashcards-list {
+    margin-top: 30px; /* Space above the flashcards list */
+}
+
+.flashcards-list ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+}
+
+.flashcards-list li {
+    padding: 10px;
+    border: 1px solid #ddd; /* Light border for list items */
+    border-radius: 5px; /* Rounded corners for list items */
+    margin-bottom: 10px; /* Space between list items */
+    display: flex; /* Flexbox for alignment */
+    justify-content: space-between; /* Space between question/answer and buttons */
+    align-items: center; /* Center align items vertically */
+}
+
+.edit-btn, .delete-btn {
+    padding: 8px 12px; /* Padding for buttons */
+    border: none;
+    border-radius: 5px; /* Rounded corners for buttons */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transition for button color */
+}
+
+.edit-btn {
+    background-color: #ffc107; /* Yellow for edit button */
+    color: #fff; /* White text */
+}
+
+.edit-btn:hover {
+    background-color: #e0a800; /* Darker yellow on hover */
+}
+
+.delete-btn {
+    background-color: #dc3545; /* Red for delete button */
+    color: #fff; /* White text */
+}
+
+.delete-btn:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
